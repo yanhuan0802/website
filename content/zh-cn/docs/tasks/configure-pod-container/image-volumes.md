@@ -66,10 +66,10 @@ to a valid reference and consuming it in the `volumeMounts` of the container. Fo
 <!--
 1. Attach to the container:
 -->
-2. 挂接到容器：
+2. 进入容器：
 
    ```shell
-   kubectl attach -it image-volume bash
+   kubectl exec -it image-volume -- bash
    ```
 
 <!--
@@ -145,10 +145,10 @@ from Kubernetes v1.33 when using the image volume feature.
 <!--
 1. Attach to the container:
 -->
-2. 挂接到容器：
+2. 进入容器：
 
    ```shell
-   kubectl attach -it image-volume bash
+   kubectl exec -it image-volume -- bash
    ```
 
 <!--

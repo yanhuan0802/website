@@ -125,10 +125,10 @@ kubectl apply -f image-volumes-subpath.yaml
 <!--
 Now you can attach to the container:
 -->
-现在你可以挂接到容器：
+现在你可以进入容器：
 
 ```shell
-kubectl attach -it image-volume bash
+kubectl exec -it image-volume -- bash
 ```
 
 <!--
