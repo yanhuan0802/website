@@ -72,10 +72,10 @@ Then, create the pod on your cluster:
 kubectl apply -f image-volumes-subpath.yaml
 ```
 
-Now you can attach to the container:
+Now you can exec into the container:
 
 ```shell
-kubectl attach -it image-volume bash
+kubectl exec -it image-volume -- bash
 ```
 
 And check the content of the file from the `dir` sub path in the volume:

@@ -37,10 +37,10 @@ to a valid reference and consuming it in the `volumeMounts` of the container. Fo
    kubectl apply -f https://k8s.io/examples/pods/image-volumes.yaml
    ```
 
-1. Attach to the container:
+1. Exec into the container:
 
    ```shell
-   kubectl attach -it image-volume bash
+   kubectl exec -it image-volume -- bash
    ```
 
 1. Check the content of a file in the volume:
@@ -82,10 +82,10 @@ from Kubernetes v1.33 when using the image volume feature.
    kubectl apply -f https://k8s.io/examples/pods/image-volumes-subpath.yaml
    ```
 
-1. Attach to the container:
+1. Exec into the container:
 
    ```shell
-   kubectl attach -it image-volume bash
+   kubectl exec -it image-volume -- bash
    ```
 
 1. Check the content of the file from the `dir` sub path in the volume:
